@@ -1,6 +1,6 @@
 // ***********************************************************************************************************
 // ***********************************    Función cambiarMensaje()    ****************************************
-// * Proposito de la funcion: Si sale Messi, imprime mensaje de `GANASTE`, si no, el de `PERDISTE`
+// * Proposito: Si sale Messi, imprime mensaje de `GANASTE`, si no, el de `PERDISTE`
 // * Parametros: - sourceFigurita: ruta de la imagen de la figurita
 //               - codigoDescuento: numero aleatorio del 0 al 99999999
 function cambiarMensaje(sourceFigurita, codigoDescuento){
@@ -18,7 +18,7 @@ function cambiarMensaje(sourceFigurita, codigoDescuento){
 
 // ***********************************************************************************************************
 // ***********************************   Función cambiarFigurita()    ****************************************
-// * Proposito de la funcion: cambiar (la ruta de) las imagenes de las figuritas y el mensaje en pantalla
+// * Proposito: cambiar (la ruta de) las imagenes de las figuritas y el mensaje en pantalla
 // * Parametros: - figuritaAleatoria: numero aleatorio que nos permitirá cambiar la ruta de la imagenes
 //               - codigoDescuento
 function cambiarFigurita(figuritaAleatoria, codigoDescuento){
@@ -32,12 +32,13 @@ function cambiarFigurita(figuritaAleatoria, codigoDescuento){
 // ***********************************************************************************************************
 // ***********************************          Función main()        ****************************************
 function main(){
-    // Variable con número aleatorio (1-18) para pasarla como parámetro para el llamado de la funcion (figuritaAleatoria)
+    // Numero aleatorio del 1 al 18 que nos permitirá cambiar la ruta de las imagenes
     let numeroAleatorio= Math.floor(Math.random()*18)+1;
-    // Variable con código de descuento aleatorio para pasarla como parámetro para el llamado de la funcion (codigoDescuento)
+    // Codigo de descuento (generado aleatoriamente)
     let codigoAleatorio= Math.floor(Math.random()*99999999);
-    // Llamado a la función
     cambiarFigurita(numeroAleatorio, codigoAleatorio);
+
+    console.log(0);
 }
 // ***********************************************************************************************************
 
