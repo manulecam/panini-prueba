@@ -119,8 +119,10 @@
     text-shadow: 1px 1px 2px rgb(39, 0, 49);
     text-align: left;
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
+    flex-direction: column;
     justify-content: space-around;
+    align-items: center;
     margin-top: 80px;
     min-height: 500px;
 }
